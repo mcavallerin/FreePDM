@@ -69,8 +69,19 @@ Critical factors:
 ### How to access files
 
 
-- Direct from server
-- Local Copy
+- Direct from server (Centralized):
+  - pro: files are updated when user checkIn the file, releasing the new versions
+  - cons: it's hard to keep more than a previous revision within the server.
+  - cons: on Winodws locking file won't allowed renaming operations (e.g.)
+  - pros: file are kept safe in a server
+  - cons: bottleneck is file transfer rate, hanging for server tasks.
+- Local Copy (Vault):
+  - pro: users are limited only by performances of workstation they're using and file download/upload.
+  - cons: users could use obsolete versions of files, they must know which version of file are using.
+  - cons: users have access to file and its properties.
+  - pros: user have access to files and it's propoerties and they don't mess up with file version on the server
+  - pro: it's easier to keep a version histroy of each single file
+  - cons: it may leads to a huge amount of disk space on server.
 
 [<< Previous Chapter](README.md) | [Content Table](README.md) | [Next Chapter >>](FreePDM_02-Workflows.md)
 
